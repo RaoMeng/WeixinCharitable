@@ -1,0 +1,6 @@
+{
+     "navigationBarTitleText": "账号登录",
+     "usingComponents": {
+          "clearInput": "../../components/clearInput/clearInput"
+     }
+}

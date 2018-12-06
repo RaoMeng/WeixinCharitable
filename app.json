@@ -1,0 +1,43 @@
+{
+     "pages": [
+          "pages/homePage/homePage",
+          "pages/activeCenter/activeCenter",
+          "pages/personalCenter/personalCenter",
+          "pages/projectDetail/projectDetail",
+          "pages/donationConfirm/donationConfirm",
+          "pages/loginPage/loginPage",
+          "pages/donationDetail/donationDetail",
+          "pages/registerPage/registerPage"
+     ],
+     "window": {
+          "backgroundTextStyle": "light",
+          "navigationBarBackgroundColor": "#EF613B",
+          "navigationBarTitleText": "WeChat",
+          "navigationBarTextStyle": "white"
+     },
+     "tabBar": {
+          "color": "#858585",
+          "selectedColor": "#EF613B",
+          "backgroundColor": "#D8D8D8",
+          "list": [
+               {
+                    "pagePath": "pages/homePage/homePage",
+                    "text": "项目列表",
+                    "iconPath": "res/images/icon_tab_list_normal.png",
+                    "selectedIconPath": "res/images/icon_tab_list_selected.png"
+               },
+               {
+                    "pagePath": "pages/activeCenter/activeCenter",
+                    "text": "活动中心",
+                    "iconPath": "res/images/icon_tab_active_normal.png",
+                    "selectedIconPath": "res/images/icon_tab_active_selected.png"
+               },
+               {
+                    "pagePath": "pages/personalCenter/personalCenter",
+                    "text": "个人中心",
+                    "iconPath": "res/images/icon_tab_personal_normal.png",
+                    "selectedIconPath": "res/images/icon_tab_personal_selelcted.png"
+               }
+          ]
+     }
+}

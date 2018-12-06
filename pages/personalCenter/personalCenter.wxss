@@ -1,0 +1,242 @@
+/* PersonCenter/PersonCenter.wxss */
+
+page {
+     width: 100%;
+     height: 100%;
+}
+
+.visiable {
+     background-color: rgb(242, 242, 242);
+     width: 100%;
+     height: 100%;
+}
+
+.headerImage {
+     width: 100%;
+     height: 340rpx;
+}
+
+.secondView {
+     position: absolute;
+     top: 230rpx;
+     left: 102rpx;
+     right: 102rpx;
+     height: 300rpx;
+     background-color: white;
+     border-radius: 20rpx;
+     box-shadow: 0rpx 8rpx 14rpx #bbb;
+     /* border: 1rpx solid lightgrey;  */
+}
+
+.first_Image_view {
+     display: flex;
+     flex: 1;
+     flex-direction: row;
+     width: 100%;
+     height: 103rpx;
+     margin-top: 0rpx;
+     margin-left: 0rpx;
+     margin-right: 0rpx;
+     align-items: center;
+}
+
+.first_name_label {
+     margin-left: 20rpx;
+     font-size: 12px;
+     color: #4b4b4b;
+}
+
+.first_title_label {
+     margin-left: 10rpx;
+     font-size: 15rpx;
+     padding: 4rpx 14rpx;
+     color: #ef613b;
+     border: 0.5rpx solid #ef613b;
+     border-radius: 20rpx;
+}
+
+.myPhotoimage {
+     margin-left: 72rpx;
+     width: 74rpx;
+     height: 74rpx;
+     /* border: 1rpx solid red; */
+     border-radius: 50%;
+}
+
+.lineView {
+     box-sizing: border-box;
+     height: 1rpx;
+     margin-top: 1rpx;
+     margin-left: 40rpx;
+     margin-right: 40rpx;
+     background-color: #d8d8d8;
+}
+
+.second_view {
+     display: flex;
+     flex: 1;
+     flex-direction: row;
+     margin: 0rpx;
+}
+
+.second_first_view {
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     width: 49.5%;
+     height: 100%;
+}
+
+.second_line {
+     margin-top: 20rpx;
+     height: 150rpx;
+     width: 1rpx;
+     background-color: #d8d8d8;
+}
+
+.second_second_view {
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     width: 49.5%;
+     height: 100%;
+}
+
+.second_first_view_label {
+     display: flex;
+     margin-left: 0rpx;
+     margin-top: 40rpx;
+     font-size: 36rpx;
+     color: #ef613b;
+     width: 100%;
+     height: 50rpx;
+     align-items: center;
+     justify-content: center;
+}
+
+.second_first_view_label1 {
+     display: flex;
+     margin-left: 0rpx;
+     margin-top: 20rpx;
+     font-size: 24rpx;
+     color: #4b4b4b;
+     width: 100%;
+     height: 50%;
+     align-items: center;
+     justify-content: center;
+}
+
+.second_second_view_label {
+     display: flex;
+     margin-left: 0rpx;
+     margin-top: 40rpx;
+     font-size: 36rpx;
+     color: #ef613b;
+     width: 100%;
+     height: 50rpx;
+     align-items: center;
+     justify-content: center;
+}
+
+.second_second_view_label1 {
+     display: flex;
+     margin-left: 0rpx;
+     margin-top: 20rpx;
+     font-size: 24rpx;
+     color: #4b4b4b;
+     width: 100%;
+     height: 50%;
+     align-items: center;
+     justify-content: center;
+}
+
+.three_view {
+     margin-right: 102rpx;
+     margin-top: 250rpx;
+     margin-left: 102rpx;
+     height: 216rpx;
+     display: flex;
+     /* flex: 1;*/
+     padding-bottom: 20rpx;
+     flex-direction: column;
+     background-color: white;
+     border-radius: 20rpx;
+     box-shadow: 0rpx 8rpx 14rpx #bbb;
+}
+
+.three_view .originate_project {
+     height: 70rpx;
+     background-color: #ef613b;
+     text-align: center;
+     border-radius: 20rpx 20rpx 0 0;
+}
+
+.originate_project_label {
+     color: white;
+     font-size: 28rpx;
+     height: 70rpx;
+     line-height: 70rpx;
+}
+
+.three_view_name {
+     width: 100%;
+     margin-top: 20rpx;
+     text-align: center;
+     font-size: 12px;
+}
+
+.teleP_number_view {
+     display: flex;
+     margin-top: 20rpx;
+}
+
+.teleP_number {
+     text-align: center;
+     font-size: 15px;
+     color: #ef613b;
+     margin: 0 auto;
+}
+
+.loginView {
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     margin: 0 auto;
+     height: 100%;
+     /* align-items: center; */
+     justify-content: center;
+     padding: 0 40rpx;
+     box-sizing: border-box;
+}
+
+.loginTitle {
+     font-size: 12px;
+     color: lightgray;
+}
+
+.loginButton1, .loginButton2 {
+     margin: 16rpx 0;
+     box-sizing: border-box;
+     font-size: 12px;
+     border-radius: 10rpx;
+     padding: 18rpx;
+     text-align: center;
+}
+
+.loginButton1 {
+     border: 1rpx solid black;
+}
+
+.loginButton2 {
+     color: white;
+     background-color: #009dd4;
+}
+
+.exitLogin {
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+     font-size: 13px;
+     color: gray;
+     margin-top: 50rpx;
+}

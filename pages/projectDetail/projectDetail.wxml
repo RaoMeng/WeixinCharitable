@@ -1,0 +1,100 @@
+<scroll-view class='content'>
+     <view class='projectBody'>
+
+          <image class='headerImg' src='{{project.mobileImg}}' mode='scaleToFill'></image>
+
+          <view class='titleItem'>
+               <text class='name'>{{project.name}}</text>
+               <text class='state'>{{project.overdue}}</text>
+          </view>
+
+          <view class='introduce'>{{project.proSummary}}</view>
+
+          <view class='donationProgress'>
+               <view class='progressItem'>
+                    <view class='money'>{{project.target}}</view>
+                    <view class='text'>筹款目标(元)</view>
+               </view>
+               <view class='progressItem'>
+                    <view class='money'>{{project.totalAmount}}</view>
+                    <view class='text'>已筹金额(元)</view>
+               </view>
+               <view class='progressItem'>
+                    <view class='money'>{{project.joinAmount}}</view>
+                    <view class='text'>捐款人次(次)</view>
+               </view>
+          </view>
+
+          <view class='donationDate'>
+               <text class='caption'>筹款时间</text>
+               <text class='value'>{{project.dateInterval}}</text>
+          </view>
+
+          <view class='commonGrayLine'></view>
+
+          <view class='classifyTitle'>
+               <view class='sign'></view>
+               <text> 项目介绍</text>
+          </view>
+
+          <view class='commonGrayLine' style='height:1px;'></view>
+
+          <view class='projectInfo'>{{project.detail}}</view>
+
+          <view class='commonGrayLine'></view>
+
+          <view class='classifyTitle'>
+               <view class='sign'></view>
+               <text>资助人群</text>
+          </view>
+
+          <view class='commonGrayLine' style='height:1px;'></view>
+
+          <view class='projectInfo'>{{project.population}}</view>
+
+          <view class='commonGrayLine'></view>
+
+          <view class='classifyTitle'>
+               <view class='sign'></view>
+               <text>执行机构</text>
+          </view>
+
+          <view class='commonGrayLine' style='height:1px;'></view>
+
+          <view class='organizationBody'>
+               <view class='iconName'>
+                    <image class='icon' mode='widthFix' src='{{organization.icon}}'></image>
+                    <text class='name'>{{organization.orgName}}</text>
+               </view>
+
+               <view class='projectInfo' style='padding:0;'>{{organization.summary}}</view>
+
+               <view class='commonGrayLine' style='height:1px;margin:10rpx 0;'></view>
+
+               <view class='rowItem'>
+                    <text class='caption'>成立日期</text>
+                    <text class='value'>{{organization.createTime}}</text>
+               </view>
+               <view class='rowItem'>
+                    <text class='caption'>所在地</text>
+                    <text class='value'>{{organization.local}}</text>
+               </view>
+               <view class='rowItem'>
+                    <text class='caption'>联系电话</text>
+                    <text class='value'>{{organization.telphone}}</text>
+               </view>
+               <view class='rowItem'>
+                    <text class='caption'>联系地址</text>
+                    <text class='value'>{{organization.address}}</text>
+               </view>
+               <view class='rowItem'>
+                    <text class='caption'>官方地址</text>
+                    <text class='value'>{{organization.website}}</text>
+               </view>
+          </view>
+     </view>
+</scroll-view>
+
+<view class='payItem'>
+     <view class="{{ISNOTarget?'button':'NObutton'}}" hover-class="{{ISNOTarget?'buttonHover':'NObuttonHover'}}" hover-stay-time='100' bindtap='donationTap'>立即捐赠</view>
+</view>

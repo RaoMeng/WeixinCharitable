@@ -1,0 +1,19 @@
+<import src='../../common/template.wxml' />
+<import src='template.wxml' />
+
+<view class='project_contain'>
+     <view style='width:100%;background:#f2f2f2;'>
+          <clearInput inputHint='搜索活动' icon-class='common_search_img' input-class='common_search_input' confirmType='search' bind:inputListener='inputListener' bind:inputConfirm='searchEvent' />
+          <view class='header_tab'>
+               <block wx:for="{{stateList}}">
+                    <view class="{{selectedIndex == index?'tab_item_selected':'tab_item_default'}}" bindtap='turnPage' data-index="{{index}}" hover-class='tab_item_hover'>{{item}}</view>
+               </block>
+          </view>
+     </view>
+
+     <swiper current='{{selectedIndex}}' bindchange='swiperChange' style='flex:1;'>
+          <template is="project_list" data="{{projectList:projectAll,loadEnable:allLoadEnable,common_row:common_row,scrolltolower:'allScrollLower',emptyMessage:allEmpty,currentIndex:1}}" />
+          <template is="project_list" data="{{projectList:projectTodo,loadEnable:todoLoadEnable,common_row:common_row,scrolltolower:'todoScrollLower',emptyMessage:todoEmpty,currentIndex:2}}" />
+          <template is="project_list" data="{{projectList:projectDone,loadEnable:doneLoadEnable,common_row:common_row,scrolltolower:'doneScrollLower',emptyMessage:doneEmpty,currentIndex:3}}" />
+     </swiper>
+</view>

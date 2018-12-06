@@ -1,0 +1,32 @@
+<view wx:if='{{showContent}}'>
+     <view wx:if='{{isVersionHigh}}'>
+          <!-- <view class='loginTitle'>
+               <text style='color:red;'>UAS</text>
+               <text> | B2B商务</text>
+          </view> -->
+
+          <clearInput inputHint='用户名' inputIcon='../../res/images/ic_username.png' icon-class='login_icon' input-class='login_input' bind:inputListener='usernameInput' />
+
+          <clearInput inputHint='密码' inputIcon='../../res/images/ic_password.png' icon-class='login_icon' input-class='login_input' bind:inputListener='passwordInput' isPassword='{{true}}' />
+
+          <view class='loginBtn' hover-class='loginBtnHover' bindtap='loginEvent' hover-stay-time='100'>登录</view>
+     </view>
+
+     <view wx:else>
+          <!-- <view class='loginTitle'>
+               <text>UAS</text>
+               <text> | B2B商务</text>
+          </view> -->
+
+          <view class='login_input'>
+               <image src='../../res/images/ic_username.png' mode="scaleToFill" class='login_icon'></image>
+               <input placeholder='用户名' style='width:100%;padding-left:12rpx;' bindinput='usernameInput'></input>
+          </view>
+          <view class='login_input'>
+               <image src='../../res/images/ic_password.png ' mode="scaleToFill" class='login_icon '></image>
+               <input placeholder='密码 ' style='width:100%;padding-left:12rpx; ' password='{{true}}' bindinput='passwordInput'></input>
+          </view>
+
+          <view class='loginBtn' hover-class='loginBtnHover' bindtap='loginEvent' hover-stay-time='100'>登录</view>
+     </view>
+</view>

@@ -1,0 +1,46 @@
+Page {
+     width: 100%;
+     padding-top: 50rpx;
+}
+
+.loginTitle {
+     display: block;
+     font-size: 25px;
+     font-weight: bold;
+     margin-top: 54rpx;
+     margin-left: 34rpx;
+     margin-bottom: 30rpx;
+}
+
+.login_input {
+     display: -webkit-flex;
+     padding: 30rpx 32rpx 15rpx;
+     font-size: 30rpx;
+     border-bottom: 1rpx solid #dedede;
+     align-items: center;
+     margin: 0 60rpx;
+}
+
+.login_icon {
+     width: 32rpx;
+     height: 32rpx;
+     vertical-align: center;
+}
+
+.loginBtn, .loginBtnHover {
+     display: block;
+     color: white;
+     font-size: 32rpx;
+     padding: 8px;
+     border-radius: 5px;
+     margin: 80rpx 60rpx 0 60rpx;
+     text-align: center;
+}
+
+.loginBtn {
+     background: #ff9e84;
+}
+
+.loginBtnHover {
+     background: rgb(247, 116, 80);
+}

@@ -1,0 +1,8 @@
+{
+     "navigationBarTitleText": "一元捐",
+     "enablePullDownRefresh": true,
+     "backgroundTextStyle": "dark",
+     "usingComponents": {
+          "numberView": "../../components/numberView/numberView"
+     }
+}

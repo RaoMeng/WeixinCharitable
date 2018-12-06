@@ -1,0 +1,30 @@
+<!--PersonCenter/donationDetail/donationDetail.wxml-->
+
+<view class='header_first'>
+     <view class='header_view'>
+          <label class='header_view_label'>已捐款次数</label>
+          <label class='header_view_label1'>{{dataArray.sumJoin}}</label>
+     </view>
+     <view class='lineView'>
+          <view class='line_view'>
+          </view>
+     </view>
+     <view class='header_view'>
+          <label class='header_view_label'>捐赠善款(元)</label>
+          <label class='header_view_label1'>{{dataArray.sumMoney}}</label>
+     </view>
+</view>
+
+<view class='first_view'></view>
+<scroll-view class='scroll-view' scroll-y>
+     <view bindtap='selectAtion' class='first_view1' wx:for='{{dataArray.projectRecodeList}}' id='{{index}}'>
+          <view class='firstView_first'>
+               <text class='label1'>{{item.project.name}}</text>
+               <text class='label2' style="color:{{item.nameColor}};">{{item.project.overdue}}</text>
+          </view>
+          <view class='firstView_second'>
+               <text class='scond_label1'>{{item.time}}</text>
+               <text class='label3'>{{item.amount}}</text>
+          </view>
+     </view>
+</scroll-view>

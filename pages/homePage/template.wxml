@@ -1,0 +1,21 @@
+<template name="donationProjectItem">
+     <view class='donationProjectItem' bindtap='{{parentTap}}' data-position='{{position}}'>
+          <image class='image' mode='scaleToFill' src='{{imageUrl}}' catchtap='{{imageTap}}'></image>
+
+          <view class='content'>
+               <view class='header'>
+                    <view class='title'>
+                         <view class='text'>{{name}}</view>
+                         <view class='introduce'>{{proSummary}}</view>
+                    </view>
+                    <view class='donation' hover-class='donationHover' catchtap='{{donationTap}}' data-position='{{position}}' hover-stay-time='100'>我要捐款</view>
+
+               </view>
+
+               <view class='progress'>
+                    <progress class='bar' active stroke-width='3' backgroundColor='#D8D8D8' activeColor='#EF613B' percent='{{progress}}'></progress>
+                    <text class='text'>还差{{remainMoney}}万元</text>
+               </view>
+          </view>
+     </view>
+</template>

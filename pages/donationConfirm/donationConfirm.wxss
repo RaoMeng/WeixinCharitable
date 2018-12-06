@@ -1,0 +1,192 @@
+Page {
+     width: 100%;
+}
+
+.detaiItem {
+     display: flex;
+     width: 100%;
+     box-sizing: border-box;
+     flex-direction: row;
+     background: white;
+     border-bottom: orange solid 1px;
+     padding: 20rpx 26rpx;
+     align-items: center;
+}
+
+.detaiItem .caption, .detaiItem .value {
+     font-size: 30rpx;
+     color: #333;
+}
+
+.detaiItem .value {
+     flex: 1;
+     text-align: right;
+}
+
+.detaiItem .icon {
+     width: 28rpx;
+     margin-left: 10rpx;
+}
+
+.donationDetail {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+}
+
+.donationDetail .mask {
+     width: 100%;
+     flex: 1;
+     background-color: black;
+     opacity: 0.4;
+     z-index: 1000;
+}
+
+.detailHeader {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     height: max-content;
+}
+
+.detailHeader .cancel {
+     width: 40rpx;
+}
+
+.detailHeader .title {
+     font-size: 14px;
+     color: #414141;
+}
+
+.donationHeader {
+     width: 100%;
+     height: 360rpx;
+}
+
+.filterContent {
+     width: 100%;
+     box-sizing: border-box;
+     position: absolute;
+     top: 260rpx;
+     padding: 0 36rpx;
+}
+
+.filterView {
+     display: flex;
+     flex-direction: column;
+     box-sizing: border-box;
+     height: max-content;
+     width: 100%;
+     box-shadow: 0rpx 8rpx 14rpx #bbb;
+     border-radius: 12rpx;
+     background: white;
+     padding: 30rpx;
+}
+
+.moneyParent {
+     margin: 16rpx 0;
+}
+
+.moneyOptionSelected, .moneyOptionNormal {
+     display: inline-table;
+     text-align: center;
+     border-radius: 8rpx;
+     width: 25%;
+     padding: 14rpx;
+     font-size: 14px;
+     margin: 10rpx;
+}
+
+.moneyOptionNormal {
+     border: 1rpx solid #7f7f7f;
+     color: #7f7f7f;
+}
+
+.moneyOptionSelected {
+     border: 1rpx solid #ef613b;
+     color: #ef613b;
+}
+
+.customMoney {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     align-items: center;
+}
+
+.customMoney .caption {
+     display: inline-block;
+     color: #5b5b5b;
+     font-size: 14px;
+     width: max-content;
+}
+
+.customMoney .money_input {
+     display: flex;
+     flex: 1;
+     margin: 16rpx;
+     padding: 8rpx 14rpx 8rpx 8rpx;
+     font-size: 14px;
+     border-radius: 8rpx;
+     box-sizing: border-box;
+     border: 1rpx solid #d7d7d7;
+     color: gray;
+     align-items: center;
+     background: white;
+}
+
+.confirmParent {
+     width: 100%;
+     position: fixed;
+     bottom: 40rpx;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.confirmButton, .confirmButtonHover, .NOconfirmButton, .NOconfirmButtonHover {
+     width: 500rpx;
+     border-radius: 40rpx;
+     color: white;
+     padding: 20rpx;
+     font-size: 15px;
+}
+
+.confirmButton {
+     background-color: #ef613b;
+}
+
+.NOconfirmButton {
+     background-color: lightgray;
+}
+
+.NOconfirmButtonHover {
+     background-color: lightgray;
+}
+
+.confirmButtonHover {
+     background-color: #f84412;
+}
+
+.yuandian {
+     width: 100%;
+     position: absolute;
+     bottom: 70px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+
+.yuandian .select_image {
+     width: 14px;
+     height: 14px;
+}
+
+.yuandian .button {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}

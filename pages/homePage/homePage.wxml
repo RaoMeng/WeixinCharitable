@@ -1,0 +1,31 @@
+<import src='template.wxml' />
+
+<swiper class='homeSwiper' autoplay interval='3000' duration='1000' circular indicator-dots>
+     <swiper-item class='homeSwiperItem' wx:for="{{homeAdvertises}}">
+          <image src='{{item.imgSrc}}' mode='scaleToFill' class='homeSwiperItem' bindtap='homeAdvertisesTap' data-index='{{index}}'></image>
+     </swiper-item>
+</swiper>
+
+<view class='commonGrayLine'></view>
+
+<view class='homeText1'>累积爱心总额</view>
+
+<view class='parentClass'>
+     <view class='numberClass' wx:for='{{numberArray}}'>{{item}}</view>
+     <text class='homeText2'>元</text>
+</view>
+
+<view class='homeText1'>累积献爱心人次</view>
+
+<view class='parentClass'>
+     <view class='numberClass' wx:for='{{personArray}}'>{{item}}</view>
+     <text class='homeText2'>人</text>
+</view>
+
+<view class='commonGrayLine'></view>
+
+<scroll-view class='areaList' scroll-x="true">
+     <text class="{{selectedIndex == index?' area_item_selected':'area_item_default'}}" wx:for='{{areaList}}' bindtap='areaTap' data-index='{{index}}'>{{item}}</text>
+</scroll-view>
+
+<template is='donationProjectItem' wx:for='{{activeList}}' data="{{imageUrl:item.listImg,name:item.name,proSummary:item.proSummary,remainMoney:item.remainMoney,progress:item.progress,donationTap:'donationTap',parentTap:'projectTap',position:index}}" />

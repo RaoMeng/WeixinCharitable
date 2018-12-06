@@ -1,0 +1,48 @@
+<!--PersonCenter/PersonCenter.wxml-->
+<!-- <text>PersonCenter/PersonCenter.wxml</text> -->
+
+<view class="{{isLoginSuccess?'visiable':'viewHidden'}}">
+     <view>
+          <image src='../../res/images/img_personal_bg.jpg' class='headerImage'></image>
+     </view>
+     <view class='secondView'>
+          <view class='first_Image_view'>
+               <image src='{{headImg}}' class='myPhotoimage' binderror='headerError'></image>
+               <label class='first_name_label'>{{newDic.user.name}}</label>
+               <text class='first_title_label'>爱心天使</text>
+          </view>
+          <view class='lineView'></view>
+          <view class='second_view'>
+               <view class='second_first_view'>
+                    <label class='second_first_view_label'>{{newDic.sumMoney}}</label>
+                    <label class='second_first_view_label1'>累计捐款/元</label>
+               </view>
+               <view class='second_line'>
+               </view>
+               <view class='second_second_view' bindtap='donationDetail'>
+                    <label class='second_second_view_label'>{{newDic.sumProJoin}}</label>
+                    <label class='second_second_view_label1'>已捐赠次数/次</label>
+               </view>
+          </view>
+     </view>
+     <view class='three_view'>
+          <view class='originate_project'>
+               <text class='originate_project_label'>我要发起项目</text>
+          </view>
+          <label class='three_view_name'>联系一元捐慈善基金会</label>
+          <view class='teleP_number_view' bindtap='callAction'>
+               <label class='teleP_number'>{{phoneNum}}</label>
+          </view>
+     </view>
+
+     <view class='exitLogin'>
+          <view bindtap='exitLoginEvent'>退出登录</view>
+     </view>
+</view>
+
+<view class="{{isLoginSuccess?'viewHidden':'loginView'}}">
+     <text class='loginTitle'>已有UU互联账号？</text>
+     <view class='loginButton1' bindtap='loginTap'>立即登录</view>
+     <text class='loginTitle'>去注册？</text>
+     <view class='loginButton2' bindtap='registerTap'>立即注册</view>
+</view>

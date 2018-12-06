@@ -1,0 +1,6 @@
+{
+     "navigationBarTitleText": "活动中心",
+     "usingComponents": {
+          "clearInput": "../../components/clearInput/clearInput"
+     }
+}

@@ -1,0 +1,190 @@
+Page {
+     display: flex;
+     flex-direction: column;
+}
+
+.homeSwiper {
+     width: 100%;
+     height: 300rpx;
+}
+
+.homeSwiper .homeSwiperItem {
+     width: 100%;
+     height: 100%;
+}
+
+.homeSwiper .wx-swiper-dots.wx-swiper-dots-horizontal {
+     margin-bottom: 10rpx;
+}
+
+.homeSwiper .wx-swiper-dot {
+     width: 20rpx;
+     display: inline-flex;
+     height: 10rpx;
+     /* margin-left: 20rpx; */
+     justify-content: space-between;
+}
+
+.homeSwiper .wx-swiper-dot::before {
+     content: '';
+     flex-grow: 1;
+     opacity: 10%;
+     background: lightslategrey;
+     border-radius: 8rpx;
+}
+
+.homeSwiper .wx-swiper-dot-active::before {
+     background: white;
+}
+
+.homeText1 {
+     font-size: 14px;
+     color: #414141;
+     padding: 10rpx 0 16rpx 40rpx;
+}
+
+.homeText2 {
+     font-size: 14px;
+     color: #414141;
+     padding-left: 16rpx;
+}
+
+.areaList {
+     display: flex;
+     flex: 1;
+     flex-direction: row;
+     align-items: center;
+     overflow: scroll;
+     white-space: nowrap;
+     padding: 10rpx;
+}
+
+.areaList .area_item_default, .areaList .area_item_selected {
+     display: inline-block;
+     margin: 4rpx 16rpx;
+     padding: 4rpx 24rpx;
+     font-size: 12px;
+     border-radius: 30rpx;
+}
+
+.areaList .area_item_default {
+     color: #484848;
+     background-color: white;
+     border: 1rpx solid #484848;
+}
+
+.areaList .area_item_selected {
+     color: white;
+     background-color: #ef613b;
+}
+
+.donationProjectItem {
+     width: 100%;
+     height: 182rpx;
+     padding: 16rpx;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     position: relative;
+     /* border-bottom: 1rpx solid #ccc; */
+     box-sizing: border-box;
+}
+
+.donationProjectItem .image {
+     width: 150rpx;
+     height: 150rpx;
+     margin-right: 16rpx;
+     border-radius: 14rpx;
+}
+
+.donationProjectItem .content {
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     left: 176rpx;
+     right: 16rpx;
+     top: 16rpx;
+     bottom: 16rpx;
+}
+
+.donationProjectItem .content .header {
+     display: flex;
+     flex-direction: row;
+     flex: 3;
+}
+
+.donationProjectItem .content .title {
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+}
+
+.donationProjectItem .content .introduce {
+     flex: 2;
+     color: #414141;
+     font-size: 12px;
+     margin: 10rpx 0;
+}
+
+.donationProjectItem .content .progress {
+     display: flex;
+     flex-direction: row;
+     flex: 1;
+}
+
+.donationProjectItem .content .title .text {
+     color: #414141;
+     font-size: 15px;
+     flex: 1;
+}
+
+.donationProjectItem .content .donationHover,
+.donationProjectItem .content .donation {
+     display: inline-block;
+     height: max-content;
+     text-align: center;
+     font-size: 12px;
+     border-radius: 30rpx;
+     padding: 10rpx 35rpx;
+}
+
+.donationProjectItem .content .donation {
+     color: #ef613b;
+     border: 1rpx solid #ef613b;
+}
+
+.donationProjectItem .content .donationHover {
+     color: white;
+     background-color: #ef613b;
+}
+
+.donationProjectItem .content .progress .bar {
+     flex: 1;
+}
+
+.donationProjectItem .content .progress .text {
+     color: #414141;
+     font-size: 10px;
+     margin-left: 8rpx;
+}
+
+.parentClass {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     box-sizing: border-box;
+}
+
+.numberClass {
+     display: inline-block;
+     height: 46rpx;
+     background-image: linear-gradient(-180deg, #ee9e88 3%, rgba(216, 216, 216, 0.50) 54%, #ffccbe 100%);
+     line-height: 46rpx;
+     padding: 6rpx 14rpx;
+     text-align: center;
+     margin: 10rpx;
+     color: black;
+}

@@ -1,0 +1,6 @@
+{
+     "navigationBarTitleText": "爱心捐赠",
+     "usingComponents": {
+          "clearInput": "../../components/clearInput/clearInput"
+     }
+}

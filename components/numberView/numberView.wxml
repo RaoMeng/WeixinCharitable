@@ -1,0 +1,3 @@
+<view class='parentClass'>
+     <view class='numberClass' wx:for='{{resArray}}'>{{item}}</view>
+</view>

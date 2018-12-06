@@ -1,0 +1,114 @@
+/* PersonCenter/donationDetail/donationDetail.wxss */
+
+page {
+     background-color: rgb(242, 242, 242);
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+}
+
+.header_first {
+     display: flex;
+     flex-direction: row;
+     margin-top: 1%;
+     margin-left: 1%;
+     background-color: rgb(255, 255, 255);
+     padding: 28rpx 0;
+     box-sizing: border-box;
+     /* position: absolute;
+  padding: 100rpx; */
+}
+
+.header_view {
+     display: flex;
+     flex-direction: column;
+     width: 49%;
+     box-sizing: border-box;
+     text-align: center;
+}
+
+.lineView {
+     display: flex;
+     width: 1%;
+     background-color: rgb(255, 255, 255);
+}
+
+.line_view {
+     background-color: #ebebeb;
+     width: 1px;
+}
+
+.header_view_label {
+     color: #989898;
+     font-size: 14px;
+}
+
+.header_view_label1 {
+     color: #ef613b;
+     font-size: 14px;
+     margin-top: 15rpx;
+}
+
+.scroll-view {
+     /* display: flex; */
+     width: 98%;
+     margin-left: 1%;
+     height: 100%;
+     overflow: scroll;
+     /* flex-direction: column; */
+}
+
+.first_view {
+     width: 100%;
+     height: 20rpx;
+}
+
+.first_view1 {
+     padding: 12rpx 16rpx;
+     background-color: rgb(255, 255, 255);
+     border-bottom: 1rpx solid lightgray;
+}
+
+.firstView_second {
+     display: flex;
+     flex-direction: row;
+     margin-top: 14rpx;
+}
+
+.firstView_first {
+     display: flex;
+     flex: 1;
+     align-items: center;
+     flex-direction: row;
+}
+
+.label1 {
+     flex: 1;
+     font-size: 14px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}
+
+.view_label {
+     display: flex;
+     flex: 1;
+}
+
+.label2 {
+     margin-left: 5rpx;
+     font-size: 10px;
+     text-align: center;
+}
+
+.label3 {
+     text-align: left;
+     font-size: 14px;
+     color: rgb(252, 101, 71);
+}
+
+.scond_label1 {
+     flex: 1;
+     font-size: 12px;
+     color: rgb(153, 153, 153);
+}

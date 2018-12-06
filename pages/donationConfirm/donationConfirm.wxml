@@ -1,0 +1,65 @@
+<import src='template.wxml' />
+
+<!-- 
+<button bindtap='confirmEvent'>确认捐款</button>
+<modal class='donationDetail'>
+<view class='detailHeader'>
+     <image class='cancel' mode='widthFix'></image>
+     <text class='title'>捐款详情</text>
+</view>
+<template is='detaiItem' data="{{caption:'捐赠信息',value:'优软科技',needIcon:false}}" />
+<template is='detaiItem' data="{{caption:'付款方式',value:'微信钱包',needIcon:false}}" />
+<template is='detaiItem' data="{{caption:'实际捐款',value:'￥5',needIcon:false}}" />
+</modal>
+-->
+
+<image class='donationHeader' mode='scaleToFill' src='{{imgUrl}}'></image>
+
+<view class='filterContent'>
+  <view class='filterView'>
+    <view class='title'>
+      <text style='color:#1B1B1B;font-size:18px; font-weight: bold;'>一元捐</text>
+      <text style='color:#898989;font-size:14px;margin-left:16rpx;'>一份爱心，一份温暖</text>
+    </view>
+
+    <view class='moneyParent'>
+      <view class="{{moneySelected == index?'moneyOptionSelected':'moneyOptionNormal'}}" wx:for='{{moneyOptions}}' bindtap='moneyTap' data-index='{{index}}'>
+        {{item}}
+      </view>
+    </view>
+
+    <view class='customMoney'>
+      <text class='caption'>自定义金额：</text>
+      <clearInput style='flex:1;' inputHint='自定义金额' icon-class='viewHidden' input-class='money_input' inputType='digit' bind:inputListener='inputListener' bind:inputConfirm='searchEvent' bind:inputFocus='inputFocus' inputValue='{{inputValue}}' bind:inputClear='inputClear'
+      />
+      <text class='caption'>元</text>
+    </view>
+
+    <view style='color:#505050;font-size:14px;margin-top:60rpx;'>捐赠详情</view>
+
+    <view class='detailMsg'>
+      <text style='color:#C84421;font-size:12px;'>*</text>
+      <text style='color:#6B6B6B;font-size:12px;'>付款方式：微信钱包</text>
+    </view>
+    <view class='detailMsg'>
+      <text style='color:#C84421;font-size:12px; '>*</text>
+      <text style='color:#6B6B6B;font-size:12px; '>实际捐款：</text>
+      <text style='color:#6B6B6B;font-size:12px; '>{{money}}</text>
+    </view>
+  </view>
+</view>
+<view class='yuandian'>
+
+  <view bindtap='AgreementAction' class='button'>
+    <image class='select_image' src="{{ISNOTarget?'../../res/images/icon_selcet_image.png':'../../res/images/icon_noselcet_image.png'}}" mode='widthFix'></image>
+
+    <text style='color:#A9A9A9;font-size:14px;margin-left:10rpx;'>同意并接受</text>
+  </view>
+
+    <text  bindtap='chechAgreement' style='color:#333;font-size:14px;'>《优软一元捐用户协议》</text>
+
+</view>
+<view class='confirmParent'>
+
+  <view class="{{ISNOTarget?'confirmButton':'NOconfirmButton'}}"  hover-class="{{ISNOTarget?'confirmButtonHover':'NOconfirmButtonHover'}}"confirmButtonHover' hover-stay-time='200' bindtap='confirmEvent'>确认支付</view>
+</view>
